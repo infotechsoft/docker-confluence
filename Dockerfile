@@ -26,8 +26,10 @@ ENV RUN_GROUP	daemon
 
 # Install Atlassian Confluence and helper tools and setup initial home directory structure.
 RUN set -x \ 
-#    && yum update --quiet \ 
-    && yum install --quiet --assumeyes libtcnative-1 xmlstarlet curl tar \ 
+    && yum update --quiet --assumeyes \ 
+    && yum install --quiet --assumeyes epel-release \
+    && yum install --quiet --assumeyes libtcnative-1 curl tar \ 
+    && yum install --quiet --assumeyes --nogpgcheck xmlstarlet \
     && yum clean all\ 
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \ 
     && mkdir -p                "${CONF_INSTALL}" \ 
