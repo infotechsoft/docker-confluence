@@ -5,7 +5,7 @@
 # * MySQL-5.1.38 Connector
 # SEE:
 # * https://bitbucket.org/atlassian/docker-atlassian-bitbucket-server
-# & https://github.com/cptactionhank/docker-atlassian-confluence
+# * https://github.com/cptactionhank/docker-atlassian-confluence
 
 
 FROM infotechsoft/java:8
