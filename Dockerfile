@@ -1,7 +1,7 @@
 # Docker Container for Atlassian Confluence
 # * Centos-7 (from infotechsoft/java)
 # * OpenJDK-8
-# * Confluence-5.9.4
+# * Confluence-5.9.9
 # * MySQL-5.1.38 Connector
 # SEE:
 # * https://bitbucket.org/atlassian/docker-atlassian-bitbucket-server
@@ -14,7 +14,7 @@ MAINTAINER Thomas J. Taylor "https://github.com/thomasjtaylor"
 # Setup useful environment variables
 ENV CONF_HOME     /var/local/atlassian/confluence
 ENV CONF_INSTALL  /usr/local/atlassian/confluence
-ENV CONF_VERSION  5.9.4
+ENV CONF_VERSION  5.9.9
 
 ENV CONF_DOWNLOAD_URL  https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONF_VERSION}.tar.gz
 
